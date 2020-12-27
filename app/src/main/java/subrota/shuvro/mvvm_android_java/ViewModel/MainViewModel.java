@@ -35,4 +35,9 @@ public class MainViewModel extends ViewModel {
         return inputString;
     }
 
+    private String add(String totalValue, String lastValue){
+        int sum = Integer.valueOf(totalValue) + Integer.valueOf(lastValue);
+        return String.valueOf(sum);
+    }
+
 }

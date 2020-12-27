@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()){
             case R.id.dot:
                 setInputString(".");
-                Log.i(TAG, "dot Taped");
+                //Log.i(TAG, "dot Taped");
                 break;
             case R.id.clear_text:
                 setInputString("c");
@@ -90,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
          }
     }
+
+    void calculation(String value, String operator){
+
+    }
+
     void setInputString(String value){
         String fullString = inputTV.getText().toString();
         String inputShow = viewModel.inputString(value, fullString);
