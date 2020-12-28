@@ -45,54 +45,64 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.divide:
                 setInputString("%");
+                viewModel.lastOperatorStore("%");
                 break;
             case R.id.multiply:
                 setInputString("x");
+                viewModel.lastOperatorStore("x");
                 break;
             case R.id.minus:
                 setInputString("-");
+                viewModel.lastOperatorStore("-");
                 break;
             case R.id.plus:
                 setInputString("+");
+                viewModel.lastOperatorStore("+");
                 break;
             case R.id.equal:
                 setInputString("=");
                 break;
             case R.id.zero:
                 setInputString("0");
+                calculation(0);
                 break;
             case R.id.one:
                 setInputString("1");
+                calculation(1);
                 break;
             case R.id.two:
                 setInputString("2");
+                calculation(2);
                 break;
             case R.id.three:
                 setInputString("3");
+                calculation(3);
                 break;
             case R.id.four:
                 setInputString("4");
+                calculation(4);
                 break;
             case R.id.five:
                 setInputString("5");
+                calculation(5);
                 break;
             case R.id.six:
                 setInputString("6");
+                calculation(6);
                 break;
             case R.id.seven:
                 setInputString("7");
+                calculation(7);
                 break;
             case R.id.eight:
                 setInputString("8");
+                calculation(8);
                 break;
             case R.id.nine:
                 setInputString("9");
+                calculation(9);
                 break;
          }
-    }
-
-    void calculation(String value, String operator){
-
     }
 
     void setInputString(String value){
@@ -103,5 +113,10 @@ public class MainActivity extends AppCompatActivity {
         }else {
             inputTV.setText("");
         }
+    }
+
+    void calculation(double value){
+        String result = viewModel.calculation(value);
+        resultTV.setText(result);
     }
 }
