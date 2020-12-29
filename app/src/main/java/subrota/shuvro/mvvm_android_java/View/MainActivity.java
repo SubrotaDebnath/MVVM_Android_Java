@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         viewModel = new ViewModelProvider(this).get(MainViewModel.class);
-
         inputTV = findViewById(R.id.inputText);
         resultTV = findViewById(R.id.resultText);
     }
