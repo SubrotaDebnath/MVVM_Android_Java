@@ -41,6 +41,7 @@ public class MainViewModel extends ViewModel {
         }else {
             inputString = "";
         }
+
         return inputString;
     }
     public void lastOperatorStore(String operator){
