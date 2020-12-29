@@ -35,7 +35,6 @@
                 android:textSize="16dp"
                 android:textStyle="normal"
                 tools:text="Calculetor" />
-
             <TextView
                 android:id="@+id/resultText"
                 android:layout_width="match_parent"
