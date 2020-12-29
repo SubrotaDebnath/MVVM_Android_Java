@@ -51,7 +51,6 @@ public class MainViewModel extends ViewModel {
             if (lastOperator.equals("+")){
                 lastValue = (lastValue*10)+value;
                 lastTotalValue = lastTotalValue+lastValue;
-
             }
         }else {
             lastTotalValue = (lastValue*10)+value;
