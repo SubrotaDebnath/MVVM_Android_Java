@@ -113,6 +113,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+
     void calculation(double value){
         String result = viewModel.calculation(value);
         resultTV.setText(result);
