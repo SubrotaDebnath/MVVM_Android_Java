@@ -59,5 +59,4 @@ public class MainViewModel extends ViewModel {
         Log.i(TAG, "lastTotalValue = " + lastTotalValue);
         return String.valueOf(lastTotalValue);
     }
-
 }
