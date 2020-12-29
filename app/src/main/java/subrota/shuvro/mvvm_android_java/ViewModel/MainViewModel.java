@@ -18,6 +18,7 @@ public class MainViewModel extends ViewModel {
 
     public String inputString(String value, String inputString){
         Log.i(TAG, "input String= " + inputString);
+
         if (value.equals("=")){
             inputString = inputString;
         }else if (value.equals("c")){
