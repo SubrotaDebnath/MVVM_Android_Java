@@ -36,6 +36,7 @@ public class MainViewModel extends ViewModel {
 
     private String backOperation(String inputString){
         //Log.i(TAG, "input String trim= " + inputString);
+
         if (inputString != null && inputString.length() > 0 ) {
             inputString = inputString.substring(0, inputString.length() - 1);
         }else {
